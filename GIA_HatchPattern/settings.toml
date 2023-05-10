@@ -1,0 +1,12 @@
+# TOML
+# 文字列は''で囲む、数値はそのまま
+
+[pic]
+zoomlevel = 14	#Z値（ズームレベル）
+threshold_area = 113 # 排除面積閾値（この値以上は排除）
+
+[fill]
+color_r = 255		#赤
+color_g = 0		#緑
+color_b = 0		#青
+color_alpha = 255	#透過

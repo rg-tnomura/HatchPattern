@@ -1,0 +1,52 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>65ac4744-0e10-49e6-9db5-070bbec1dcb9</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>GIA_HatchPattern.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>GIA_HatchPattern</Name>
+    <RootNamespace>GIA_HatchPattern</RootNamespace>
+    <InterpreterId>Global|VisualStudio|HatcPattern_py3.9</InterpreterId>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments>-inpath C:\Users\501796\Desktop\HatchPattern\81hokkaido\20757sapporo\kyubibaigawa\20220607\tiles -outpath C:\Users\501796\Desktop\HatchPattern\81hokkaido\20757sapporo\kyubibaigawa\20220607\tiles\output</CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="FillImage.py" />
+    <Compile Include="GIA_HatchPattern.py" />
+    <Compile Include="GetFile.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Setting_Hatchpattern.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|VisualStudio|HatcPattern_py3.9" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="settings.toml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
